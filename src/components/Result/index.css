@@ -1,14 +1,15 @@
 .cardContainer2 {
   display: flex;
-  flex-wrap: wrap; /* Allows elements to wrap to the next row */
-  justify-content: center; /* Aligns the cards at the center */
-  gap: 30px; /* Adds spacing between cards */
-  list-style-type: none;
-  margin-left: 0px; /*  padding: 0; */
-  padding-left: 0px; /*  margin: 0; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 .card {
-  flex: 0 0 calc(50% - 20px); /* Two cards per row */
+  flex: 0 0 calc(50% - 20px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +23,6 @@
   border-radius: 50%;
   background-color: transparent;
   border: none;
-  outline: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -36,35 +36,38 @@
   border-radius: 50%;
   object-fit: cover;
 }
-.person {
+
+.person,
+.resultMsg {
   color: #ffffff;
-  font-size: 25px;
   font-family: Bree Serif;
   font-weight: bold;
 }
+
+.person {
+  font-size: 25px;
+}
+
+.resultMsg {
+  font-size: 35px;
+}
+
 .resultContainer {
   text-align: center;
 }
+
 .playAgainBtn {
   background-color: #ffffff;
   color: #223a5f;
   font-size: 25px;
   font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 20px;
   border-radius: 10px;
-  outline: none;
   border: none;
   cursor: pointer;
 }
-.resultMsg {
-  color: #ffffff;
-  font-size: 35px;
-  font-family: Bree Serif;
-  font-weight: bold;
-}
+
+
 @media only screen and (max-width: 767px) {
   .card {
     flex: 0 0 calc(50% - 10px);
@@ -74,39 +77,21 @@
     max-width: 120px;
     height: 120px;
   }
+
   .playAgainBtn {
-    background-color: #ffffff;
-    color: #223a5f;
-    font-weight: bold;
     font-size: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    cursor: pointer;
+    padding: 8px 15px;
   }
+
   .resultMsg {
-    color: #ffffff;
     font-size: 20px;
-    font-family: Bree Serif;
   }
 
   .cardContainer2 {
-    display: flex;
-    flex-wrap: wrap; /* Allows elements to wrap to the next row */
-    justify-content: center; /* Aligns the cards at the center */
-    gap: 20px; /* Adds spacing between cards */
-    list-style-type: none;
-    margin: 0px; /*  padding: 0; */
-    padding: 0px; /*  margin: 0; */
+    gap: 20px;
   }
+
   .person {
-    color: #ffffff;
     font-size: 20px;
-    font-family: Bree Serif;
-    font-weight: bold;
   }
 }

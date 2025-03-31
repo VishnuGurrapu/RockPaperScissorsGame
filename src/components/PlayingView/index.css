@@ -7,6 +7,7 @@
   align-items: center;
   padding-top: 30px;
 }
+
 .navbar {
   width: 80%;
   display: flex;
@@ -15,6 +16,7 @@
   padding: 15px;
   border-radius: 30px;
 }
+
 .navHeading {
   color: #ffffff;
   font-family: Bree Serif;
@@ -31,20 +33,21 @@
   padding: 10px;
   border-radius: 10px;
 }
-.scorePara {
+
+.scorePara,
+.score {
   color: #223a5f;
-  font-family: roboto;
-  font-size: 25px;
+  font-family: Roboto;
   font-weight: bold;
-  margin: 0px;
+  margin: 0;
 }
+
+.scorePara {
+  font-size: 25px;
+}
+
 .score {
   font-size: 45px;
-  color: #223a5f;
-  font-weight: bold;
-  font-family: Roboto;
-  padding: 0px;
-  margin: 0px;
 }
 
 .gameContainer {
@@ -54,35 +57,34 @@
   justify-content: center;
   width: 90%;
 }
+
 .cardContainer {
   display: flex;
-  flex-wrap: wrap; /* Allows elements to wrap to the next row */
-  justify-content: center; /* Aligns the cards at the center */
-  gap: 20px; /* Adds spacing between cards */
-  list-style-type: none;
-  margin-left: 0px;
-  padding-left: 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 .rulesContainer {
   display: flex;
-
   align-self: flex-end;
 }
+
 .rulesBtn {
   background-color: #ffffff;
   color: #223a5f;
   font-weight: bold;
   font-size: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 20px;
   border-radius: 10px;
-  outline: none;
   border: none;
   cursor: pointer;
   align-self: flex-end;
 }
+
 .popupContainer {
   background-color: #ffffff;
   padding: 35px;
@@ -108,136 +110,63 @@
 @media only screen and (max-width: 767px) {
   .navbar {
     width: 90%;
-    display: flex;
-    justify-content: space-between;
     border: 1px solid #ffffff;
     padding: 10px;
     border-radius: 10px;
   }
+
   .navHeading {
-    color: #ffffff;
-    font-family: Bree Serif;
     font-size: 20px;
   }
 
-  .scoreCard {
-    min-width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 10px;
-  }
   .scorePara {
-    color: #223a5f;
-    font-family: roboto;
     font-size: 18px;
-    font-weight: bold;
-    margin: 0px;
-  }
-  .score {
-    font-size: 30px;
-    color: #223a5f;
-    font-weight: bold;
-    padding: 0px;
-    margin: 0px;
-    font-family: Roboto;
-  }
-  .bgContainer {
-    background-color: #223a5f;
-    min-height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 7vh;
-  }
-  .rulesBtn {
-    background-color: #ffffff;
-    color: #223a5f;
-    font-weight: bold;
-    font-size: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    align-self: flex-end;
-  }
-  .popupContainer {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
   }
 
-  .closeBtn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
+  .score {
+    font-size: 30px;
+  }
+
+  .bgContainer {
+    padding-top: 7vh;
+  }
+
+  .rulesBtn {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+
+  .popupContainer {
+    padding: 25px;
   }
 
   .rulesImage {
     width: 260px;
-    max-width: 100%;
   }
 }
+
 @media only screen and (max-width: 575px) {
   .bgContainer {
-    background-color: #223a5f;
-    min-height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 3vh;
   }
+
   .navbar {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #ffffff;
     padding: 8px;
-    border-radius: 10px;
   }
+
   .navHeading {
-    color: #ffffff;
-    font-family: Bree Serif;
     font-size: 15px;
   }
 
   .scoreCard {
-    min-width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #ffffff;
     padding: 7px;
-    border-radius: 10px;
   }
+
   .scorePara {
-    color: #223a5f;
-    font-family: roboto;
     font-size: 13px;
-    font-weight: bold;
-    margin: 0px;
   }
+
   .score {
     font-size: 23px;
-    color: #223a5f;
-    font-weight: bold;
-    padding: 0px;
-    margin: 0px;
-    font-family: Roboto;
   }
 }
